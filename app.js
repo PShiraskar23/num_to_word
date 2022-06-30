@@ -50,20 +50,35 @@ if(inputNum<=10000){
     
 
     }else if(Number(inputNum)>= 1000  && Number(inputNum) <= 10000){
-        fourthastInt=inputNum.slice(0,(inputNum.length-3))
+        fourthlastInt=inputNum.slice(0,(inputNum.length-3))
         thirdlastInt=inputNum.slice((inputNum.length-3),(inputNum.length-2))
         secondlastInt=inputNum.slice((inputNum.length-2),(inputNum.length-1))
         lastInt=inputNum.slice((inputNum.length-1))
         lastTwoInt=`${secondlastInt}${lastInt}`
 
-        if(Number(lastInt)==0){
-            para.textContent=`${numArr1[Number(fourthastInt)]} ${numArr3[2]} ${numArr2[Number(secondlastInt)]} `
+
+if(Number(thirdlastInt)==0 ){
+            if(Number(lastTwoInt)<20){
+                para.textContent=`${numArr1[Number(fourthlastInt)]} ${numArr3[2]}  ${numArr1[Number(lastTwoInt)]}`
+            }else if(Number(lastInt)==0){
+                console.log("working 3")
+                para.textContent=`${numArr1[Number(fourthlastInt)]}  ${numArr3[2]} ${numArr2[Number(secondlastInt)]} `
+            }else if(Number(lastTwoInt)>20){
+                console.log("working 2")
+                para.textContent=`${numArr1[Number(fourthlastInt)]}  ${numArr3[2]} ${numArr2[Number(secondlastInt)]} ${numArr1[Number(lastInt)]}`
+            }
+
+        }else if(Number(lastInt)==0){
+            para.textContent=`${numArr1[Number(fourthlastInt)]} ${numArr3[2]} ${numArr1[Number(thirdlastInt)]} ${numArr3[1]}  ${numArr2[Number(secondlastInt)]} `
 
         }else if(Number(lastTwoInt)<20){
-            para.textContent=`${numArr1[Number(fourthastInt)]} ${numArr3[2]} ${numArr1[Number(thirdlastInt)]} ${numArr3[1]} ${numArr1[Number(lastTwoInt)]}`
-        }else{
-        para.textContent=`${numArr1[Number(fourthastInt)]} ${numArr3[2]} ${numArr1[Number(thirdlastInt)]} ${numArr3[1]} ${numArr2[Number(secondlastInt)]} ${numArr1[Number(lastInt)]}`
+            para.textContent=`${numArr1[Number(fourthlastInt)]} ${numArr3[2]} ${numArr1[Number(thirdlastInt)]} ${numArr3[1]} ${numArr1[Number(lastTwoInt)]}`
+            console.log("working 1")
         }
+        else{
+        para.textContent=`${numArr1[Number(fourthlastInt)]} ${numArr3[2]} ${numArr1[Number(thirdlastInt)]} ${numArr3[1]} ${numArr2[Number(secondlastInt)]} ${numArr1[Number(lastInt)]}`
+        }
+
     }}else{
         errormsg.style.display="block"
     }  }else{
