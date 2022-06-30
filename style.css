@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: purple;
+}
+
+.container {
+    width: 60vw;
+    height: 50vh;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    background: rgb(215, 141, 206);
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
+    margin: 10px;
+}
+
+.lable {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inputNumber {
+    width: 40%;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: paleturquoise;
+}
+
+.btn {
+    display: block;
+    width: 25%;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 255, 0.4);
+
+}
+
+p{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.errorMsg {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    display: none;
+
+}
+
+@media screen and (max-width:480px){
+    .container {
+        width: 60vw;
+        height: 50vh;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgb(215, 141, 206);
+    }
+    
+    .heading {
+        font-size: 20px;
+        font-weight: bold;
+        color: blue;
+        margin: 5px;
+    }
+    
+    .lable {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .inputNumber {
+        width: 50%;
+        padding: 2px 10px;
+        margin: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background-color: paleturquoise;
+    }
+    
+    .btn {
+        display: block;
+        width: 35%;
+        padding: 3px;
+        margin: 5px auto;
+        font-size: 12px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        border-radius: 3px;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: rgba(0, 0, 255, 0.4);
+    
+    }
+    
+    p{
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+    
+    }
+    
+    .errorMsg {
+        font-size: 12px;
+        font-weight: bold;
+        color: red;
+        display: none;
+    
+    }
+}
+
+
+@media screen and (min-width:481px) and  (max-width:768px) {
+    .container {
+        width: 60vw;
+        height: 50vh;
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        background: rgb(215, 141, 206);
+    }
+    
+    .heading {
+        font-size: 25px;
+        font-weight: bold;
+        color: blue;
+        margin: 8px;
+    }
+    
+    .lable {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .inputNumber {
+        width: 50%;
+        padding: 5px 10px;
+        margin: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background-color: paleturquoise;
+    }
+    
+    .btn {
+        display: block;
+        width: 30%;
+        padding: 5px;
+        margin: 5px auto;
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: rgba(0, 0, 255, 0.4);
+    
+    }
+    
+    p{
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+    
+    }
+    
+    .errorMsg {
+        font-size: 12px;
+        font-weight: bold;
+        color: red;
+        display: none;
+    
+    }
+  
+}
+
+@media screen and (min-width:769px) and  (max-width:1024px) {
+   
+.container {
+    width: 60vw;
+    height: 50vh;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgb(215, 141, 206);
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    margin: 10px;
+}
+
+.lable {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.inputNumber {
+    width: 40%;
+    padding: 5px 10px;
+    margin: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    background-color: paleturquoise;
+}
+
+.btn {
+    display: block;
+    width: 25%;
+    padding: 8px;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 255, 0.4);
+
+}
+
+p{
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
+.errorMsg {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    display: none;
+
+}
+} 
